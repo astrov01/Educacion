@@ -48,7 +48,7 @@ body {
 .profile-img
 {
     width: 400px;
-    height: 300px;
+    height: 350px;
     margin: 0 auto 10px;
     display: block;
     -moz-border-radius: 10%;
@@ -59,8 +59,8 @@ body {
 .need-help
 {
     margin-top: 10px;
-    margin-bottom: 25px;
-    padding-left: 40%;
+    margin-bottom: 10px;
+    padding-left: 20%;
 
 }
 
