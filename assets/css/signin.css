@@ -64,6 +64,14 @@ body {
 
 }
 
+.need-helped
+{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 33%;
+
+}
+
 .profile-img
 {
     width: 450px;
