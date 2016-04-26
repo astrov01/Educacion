@@ -15,18 +15,18 @@
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 
     <script language="JavaScript">
-        function pregunta(){
+        function confirmacion(){
 
-            var mensaje = confirm('¿Estas seguro de enviar este formulario?');
+            var mensaje = confirm('¿Estás seguro de enviar este resultado?');
 
             if(mensaje) {
-                alert("Se ha enviado su postal, espero la disfrute.");
-                document.tuformulario.submit();
+                alert("Se ha enviado su respuesta.");
+                window.content.document.url="NumerosyOperaciones.html";
             }
             else{
-                alert("Has cancelado la postal");
+                alert("Has cancelado la respuesta");
+                document.location.href="NumerosyOperaciones.html";
             }
-
 
         }
     </script>
@@ -72,7 +72,7 @@
                                 <div class="panel-body">
                                     <textarea id="bootstrap-editor" placeholder="PON TU RESPUESTA AQUI" style="width:98%;height:200px;"></textarea>
                                     </div>
-                                <div><input onclick="window.location = 'NumerosyOperaciones.html'" id="botonMatematicas" alt="boton de envio" title="Enviar respuesta" type="submit">
+                                <div><input onclick="window.location = confirmacion()" id="botonMatematicas" alt="boton de envio" title="Enviar respuesta" type="submit">
                                 </div>
                             </div>
 
