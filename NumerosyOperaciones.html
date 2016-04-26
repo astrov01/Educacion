@@ -13,8 +13,25 @@
     <link rel="stylesheet" href="assets/css/main2.css" />
     <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+    <script language="JavaScript">
+        function pregunta(){
+
+            var mensaje = confirm('¿Estas seguro de enviar este formulario?');
+
+            if(mensaje) {
+                alert("Se ha enviado su postal, espero la disfrute.");
+                document.tuformulario.submit();
+            }
+            else{
+                alert("Has cancelado la postal");
+            }
+
+
+        }
+    </script>
 </head>
-<body>
+<body style="overflow: hidden;">
 <!-- Wrapper -->
 <div id="wrapper">
 
@@ -45,19 +62,17 @@
 
                     <div class="col-md-6" id="postal_2" style="margin-top: 2%;">
                         <div>
-                            <p>Está formado por el Sol y una serie de cuerpos que están ligados con esta estrella por la gravedad: ocho grandes planetas (Mercurio, Venus, Tierra, Marte, Júpiter, Saturno, Urano y Neptuno), junto con sus satélites, planetas menores (entre ellos, el ex-planeta Plutón), asteroides, cometas, polvo y gas interestelar.</p>
+                            <p>Pon la respuesta correcta justo en el cuadro debajo (como el profesor te lo indique):</p>
 
                             <div class="content-box-large">
                                 <div class="panel-heading">
-                                    <div class="panel-title">TinyMCE Basic</div>
+                                    <div class="panel-title"></div>
 
-                                    <div class="panel-options">
-                                        <a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
-                                        <a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
-                                    </div>
                                 </div>
                                 <div class="panel-body">
-                                    <textarea id="tinymce_basic"></textarea>
+                                    <textarea id="bootstrap-editor" placeholder="PON TU RESPUESTA AQUI" style="width:98%;height:200px;"></textarea>
+                                    </div>
+                                <div><input onclick="window.location = 'NumerosyOperaciones.html'" id="botonMatematicas" alt="boton de envio" title="Enviar respuesta" type="submit">
                                 </div>
                             </div>
 
